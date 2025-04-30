@@ -1,13 +1,10 @@
 
 def read_lines():
     lines = []
-    try:
-        while True:
-            line = input()
-            if line == "": break
-            lines.append(line)
-    except EOFError:
-        pass
+    while True:
+        line = input()
+        if line == "": break
+        lines.append(line)
     return lines
 
 

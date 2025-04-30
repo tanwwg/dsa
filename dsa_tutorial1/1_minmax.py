@@ -7,6 +7,9 @@ def minmax(data):
             big = i
     return small, big
 
-minmax(list(range(100)))
+print(minmax(list(range(100))))
+
+# real life solution
 
 def minmax(data): return min(data), max(data)
+print(minmax(list(range(100))))
