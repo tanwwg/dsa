@@ -1,4 +1,4 @@
-from CreditCard import CreditCard
+from credit_card import CreditCard
 
 class PredatoryCreditCard(CreditCard):
 
