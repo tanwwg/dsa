@@ -4,6 +4,10 @@ To see how sorting works at runtime:
 
 [Sorting demo](https://jibsthefat.itch.io/sort-demo)
 
+## Assignment 1
+
+[Tips and tricks here](assignment1.pdf)
+
 ## Practical 4-5
 
 Qn 1 Selection Sort partial code
