@@ -1,5 +1,21 @@
 from datetime import datetime
 
+import csv
+
+def write_csv():
+    data = [
+        ["Name", "Age", "City"],
+        ["Alice", 30, "New York"],
+        ["Bob", 25, "Los Angeles"],
+        ["Charlie", 35, "Chicago"]
+    ]
+    with open("output.csv", "w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
+
+
+
+
 def display_records():
     print("Records:")
 
@@ -26,22 +42,10 @@ def print_blue(s):
     print(f"\033[94m{s}\033[0m")
 
 def log(s):
-    with open("output.txt", "a") as file:
+    with open("log.txt", "a") as file:
         print(datetime.now(), file=file)
         print(s, file=file)
 
-import csv
-
-def write_csv():
-    data = [
-        ["Name", "Age", "City"],
-        ["Alice", 30, "New York"],
-        ["Bob", 25, "Los Angeles"],
-        ["Charlie", 35, "Chicago"]
-    ]
-    with open("output.csv", "w", newline="") as file:
-        writer = csv.writer(file)
-        writer.writerows(data)
 
 def main_menu():
     while True:
@@ -55,6 +59,9 @@ def main_menu():
             add_employee()
         else:
             print('Invalid option')
+
+# Find person named "Bob"
+matches = [p for p in people if "bo" in p.name.lower()]
 
 write_csv()
 log("App Start")
