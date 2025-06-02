@@ -1,0 +1,10 @@
+@startmindmap
+* isPalindrome("madam")
+** len("madam") -> 5
+** "m" == "m" -> True
+** isPalindrome("ada") -> True
+*** len("ada") -> 3
+*** "a" == "a" -> True
+*** isPalindrome("d") -> True
+**** len("d") -> 1
+@endmindmap
